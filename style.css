@@ -324,3 +324,18 @@ article {
 ::-webkit-scrollbar-thumb:hover {
   background: #7e7d7d; 
 }
+
+.active {
+  color: #fff;
+}
+
+.container {
+  text-align: center;
+}
+
+iframe {
+  text-align: center;
+  width: 70vw;
+  height: 50vh;
+}
+
