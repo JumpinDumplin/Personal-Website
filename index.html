@@ -8,7 +8,7 @@
     <title>Anish Basu</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
-  <body>
+  <body onload="updateContent(home)">
     <header>
       <div class="content">
         <div class="logo">
@@ -56,25 +56,40 @@
       <div class="site-nav">
         <nav>
           <ul>
-            <li><a href="index.html" style="color: white">ABOUT</a>
-            <li><a href="reading.html">READING</a>
-            <li><a href="notebook.html">NOTEBOOK</a>
+            <li><a class='home' href>ABOUT</a>
+            <li><a class='reading' href>READING</a>
+            <li><a class='notebook' href>NOTEBOOK</a>
           </ul>
         </nav>
       </div>
     </article>
-    <article>
-      <div class="heading">
-        <p>👾 Who am I ?</p>
-      </div>
-    </article>
-    <article>
-      <div class="writing">
-        <p>Hi, I'm a high school senior from Calcutta. I like to swim, solve rubiks cubes, eat pancakes and draw dinosaurs (especially brachiosaurus). Oh, and I love to code, infact, I made this website entirely using HTML and CSS (and a lot of googling). You can find the source code at my <a href="https://github.com/JumpinDumplin">Github</a> page. I also write software and build stuff that I think is cool. Right now I'm learning how to build scalable AI models ready for deployment, mainly using Python and open-source tools. 
-        <br><br>
-        Feel free get in touch via the links in my header!</p>
-      </div>
-    </article>
+    <div id='content'>
+    </div>
+    <script src="content/home.js"></script>
+    <script src="content/reading.js"></script>
+    <script src="content/notebook.js"></script>
+    <script>
+      const homeTag = document.getElementsByClassName('home')[0];
+      const readingTag = document.getElementsByClassName('reading')[0];
+      const notebookTag = document.getElementsByClassName('notebook')[0];
+
+      const updateContent = (page) => {
+        document.getElementById("content").innerHTML= page;
+      }
+
+      homeTag.addEventListener('click', function(e){
+        e.preventDefault()
+        updateContent(home)
+      })
+      readingTag.addEventListener('click', function(e){
+        e.preventDefault()
+        updateContent(reading)
+      })
+      notebookTag.addEventListener('click', function(e){
+        e.preventDefault()
+        updateContent(notebook)
+      })
+
+    </script>
   </body>
-  
 </html>
