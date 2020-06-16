@@ -191,7 +191,7 @@ article {
   color: white;
   position: relative;
   background-color: #212020;
-  box-shadow: 3px 3px 10px #000000;
+  box-shadow: 5px 5px 15px #000000;
 }
 
 .book-gallery .caption {
