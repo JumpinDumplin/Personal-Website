@@ -8,6 +8,12 @@ header {
   justify-content: center;
   background-color: #0F0F0F;
 }
+.heading {
+  background-color: #0F0F0F;
+}
+.writing {
+  background-color: #0F0F0F;
+}
 hr {
   margin: 0px;
 }
