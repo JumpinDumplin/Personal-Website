@@ -1,12 +1,15 @@
 body {
   margin: 0px;
-  background-color: #212020;
+  background-color: #0F0F0F;
 }
 header {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: #252627;
+  background-color: #0F0F0F;
+}
+hr {
+  margin: 0px;
 }
 .content {
   width: 750px;
