@@ -17,6 +17,9 @@ header {
 hr {
   margin: 0px;
 }
+article {
+  background: #0F0F0F
+}
 .content {
   width: 750px;
 }
